@@ -18,7 +18,9 @@ function Step({ state, number, content }: StepProps) {
 				</div>
 			)}
 
-			<p className={` text-xl ${state === "active" ? "font-bold" : null}`}>{content}</p>
+			<p className={`font-title text-xl ${state === "active" ? "font-extrabold" : null}`}>
+				{content}
+			</p>
 		</div>
 	);
 }

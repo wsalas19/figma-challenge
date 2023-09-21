@@ -3,6 +3,7 @@ import React from "react";
 import product from "../../public/assets/product-main.png";
 import UserReview from "./UserReview";
 import ProductCard from "./ProductCard";
+import Features from "./Features";
 
 function Main() {
 	return (
@@ -12,11 +13,12 @@ function Main() {
 				<UserReview />
 			</div>
 			<div className='flex flex-col w-[50%] gap-8'>
-				<p className='font-title text-[2.5rem]'>
-					<span className='text-[#2C7EF8]'>ONE TIME ONLY</span> special price for 6 extra Clarifion
-					for only <span className='text-[#2C7EF8]'>$14 each</span> ($84.00 total!)
+				<p className='font-title text-[2.4rem]'>
+					<span className='text-[#2C7EF8]'>ONE TIME ONLY</span> Special Price For 6 Extra Clarifion
+					For Only <span className='text-[#2C7EF8]'>$14 Each</span> ($84.00 Total!)
 				</p>
 				<ProductCard />
+				<Features />
 			</div>
 		</div>
 	);
