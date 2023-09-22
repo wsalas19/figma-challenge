@@ -4,6 +4,8 @@ import product from "../../public/assets/product-main.png";
 import UserReview from "./UserReview";
 import ProductCard from "./ProductCard";
 import Features from "./Features";
+import { Percent } from "lucide-react";
+import PaymentTab from "./PaymentTab";
 
 function Main() {
 	return (
@@ -19,6 +21,17 @@ function Main() {
 				</p>
 				<ProductCard />
 				<Features />
+				<div className='flex flex-row gap-2 items-center bg-[#EDF3FD] rounded-lg py-3 px-4'>
+					<div className='flex justify-center items-center w-8  aspect-square rounded-full bg-[#2C7EF8]'>
+						<Percent color='white' size={20} />
+					</div>
+					<p className=' text-xl'>
+						Save <span className='text-[#2C7EF8]'>53%</span> and get{" "}
+						<span className='text-[#2C7EF8]'>6 extra Clarifision</span> for only{" "}
+						<span className='text-[#2C7EF8]'>$14 Each</span>.
+					</p>
+				</div>
+				<PaymentTab />
 			</div>
 		</div>
 	);

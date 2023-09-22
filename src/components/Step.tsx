@@ -9,11 +9,11 @@ function Step({ state, number, content }: StepProps) {
 			{state === "completed" ? (
 				<Image src={check} alt='check' width={40} height={40} />
 			) : state === "active" ? (
-				<div className=' flex justify-center items-center w-10 h-10  rounded-full bg-[#2C7EF8]'>
+				<div className=' flex justify-center items-center w-10 h-10  aspect-square rounded-full bg-[#2C7EF8]'>
 					<p className=' text-xl text-white'>{number}</p>
 				</div>
 			) : (
-				<div className=' flex justify-center items-center w-10 h-10  rounded-full border-[#2C7EF8] border-solid border-2'>
+				<div className=' flex justify-center items-center w-10 h-10 aspect-square  rounded-full border-[#2C7EF8] border-solid border-2'>
 					<p className={"text-xl text-[#2C7EF8]"}>{number}</p>
 				</div>
 			)}
